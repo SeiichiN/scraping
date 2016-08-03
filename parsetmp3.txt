@@ -1,0 +1,36 @@
+SimpleXMLElement Object ( 
+  [@attributes] => Array ( [lang] => ja ) 
+  [head] => SimpleXMLElement Object ( 
+    [meta] => SimpleXMLElement Object ( 
+      [@attributes] => Array ( [charset] => utf-8 )
+    )
+    [title] => サンプル
+  )
+  [body] => SimpleXMLElement Object (
+    [div] => SimpleXMLElement Object (
+      [@attributes] => Array ( [id] => wrap )
+      [header] => SimpleXMLElement Object (
+        [h1] => サンプルのページ
+        [nav] => SimpleXMLElement Object (
+          [ul] => SimpleXMLElement Object (
+            [li] => Array (
+              [0] => SimpleXMLElement Object ( [a] => ホーム )
+              [1] => SimpleXMLElement Object ( [a] => メニュー )
+              [2] => SimpleXMLElement Object ( [a] => アクセス )
+              [3] => SimpleXMLElement Object ( [a] => お問い合わせ )
+            )
+          )
+        )
+      )
+      [article] => SimpleXMLElement Object (
+        [figure] => SimpleXMLElement Object ( )
+        [h2] => 新着情報
+        [p] => Array (
+          [0] => たてたてよこよこ
+          [1] => まるかいてちょん
+        )
+      )
+      [footer] => SimpleXMLElement Object ( [small] => dfdfafadfa )
+    )
+  )
+)
