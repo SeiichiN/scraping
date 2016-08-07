@@ -52,7 +52,33 @@ echo 'h3 = ' . $wd_h3 .'<br>';
 
 
 $domDocument = new DOMDocument();
-$domDocument->loadHTML($html);
+@$domDocument->loadHTML($html);
+$xml = simplexml_import_dom($domDocument);
+$fff = $xml->xpath('string(//h1/text())');
+
+$array = json_decode(json_encode($fff), true);
+echo 'h1 = ' . $array['h1'] . "<br>\n";
+echo 'h2 = ' . $array['h2'] . "<br>\n";
+
+
+
+//$xmlString = $domDocument->saveXML();
+//$xmlObject = simplexml_load_string($xmlString);
+
+// $found_h1 = $xml->xpath("//h2");
+
+
+var_dump($fff);
+echo "<br>\n";
+print_r($array);
+
+?>
+
+<p><a href="file.html">ファイル選択</a></p>
+</body>
+</html>
+<?php
+/*
 $xmlString = $domDocument->saveXML();
 $xmlObject = simplexml_load_string($xmlString);
 var_dump($xmlObject);
@@ -60,10 +86,13 @@ var_dump($xmlObject);
 
 $array = json_decode(json_encode($xmlObject), true);
 echo 'h1 = ' . $array['body']['div']['header']['h1'];
+*/
 
+/*
+$xml = simplexml_import_dom($domDocument);
+*/
+
+// $xpath = new DOMXPath($domDocument);
+// $found_h1 = $xpath->query('html/body/div/article/h2');
 
 ?>
-
-<p><a href="file.html">ファイル選択</a></p>
-</body>
-</html>
